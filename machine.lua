@@ -460,31 +460,7 @@ local nodes_of_slopes = {
 	{"wool:violet",						"wool_violet"},
 	{"wool:white",						"wool_white"},
 	{"wool:yellow",						"wool_yellow"},
-
---Batmod
-
-	{ "bat_blocks:bat_cobble",			"bat_cobble"},
-	{ "bat_blocks:bat_cobble_white",	"bat_cobble_white"},
-	{ "bat_blocks:bat_cobble_tan",		"bat_cobble_tan"},
-	{ "bat_blocks:bat_pavers",			"bat_pavers"},
-	{ "bat_blocks:bat_block",			"bat_block"},
-	{ "bat_blocks:bat_tile",			"bat_tile"},
-	{ "bat_blocks:bat_diag",			"bat_diag"},
-	{ "bat_blocks:bat_x",				"bat_x_block"},
-	{ "bat_blocks:bat_brick",			"bat_brick"},
-	{ "bat_blocks:bat_smbrick",			"bat_smbrick"},
-	{ "bat_blocks:bat_hex",				"bat_hex"},
-
---castle
-
-	{"castle:dungeon_stone",			"dungeon_stone"},
-	{"castle:pavement",					"pavement_brick"},
-	{"castle:rubble",					"rubble"},
-	{"castle:roofslate",				"slate"},
-	{"castle:stonewall",				"stonewall"},
-
 --moreblocks
-
 	{ "moreblocks:cactus_brick",		"cactus_brick"},
 	{ "moreblocks:cactus_checker",		"cactus_checker"},
 	{ "moreblocks:coal_stone_bricks",	"coal_stone_bricks"},
@@ -495,9 +471,7 @@ local nodes_of_slopes = {
 	{ "moreblocks:stone_tile",			"stone_tile"},
 	{ "moreblocks:wood_tile_center",	"wood_tile_center"},
 	{ "moreblocks:wood_tile_full",		"wood_tile_full"},
-
 --moretrees
-
 	{"moretrees:apple_planks",			"apple_tree"},
 	{"moretrees:beech_planks",			"beech"},
 	{"moretrees:oak_planks",			"oak"},
@@ -508,47 +482,7 @@ local nodes_of_slopes = {
 	{"moretrees:willow_planks",			"willow"},
 	{"moretrees:rubber_tree_planks",	"rubber_tree"},
 	{"moretrees:fir_planks",			"fir"},
-
---hardened clay
-
-	{ "hardenedclay:hardened_clay",				"hardened_clay"},
-	{ "hardenedclay:hardened_clay_white",		"hardened_clay_white"},
-	{ "hardenedclay:hardened_clay_black",		"hardened_clay_black"},
-	{ "hardenedclay:hardened_clay_light_blue",	"hardened_clay_light_blue"},
-	{ "hardenedclay:hardened_clay_green",		"hardened_clay_green"},
-	{ "hardenedclay:hardened_clay_red",			"hardened_clay_red"},
-	{ "hardenedclay:hardened_clay_light_grey",	"hardened_clay_light_grey"},
-	{ "hardenedclay:hardened_clay_violet",		"hardened_clay_violet"},
-	{ "hardenedclay:hardened_clay_lime",		"hardened_clay_lime"},
-	{ "hardenedclay:hardened_clay_magenta",		"hardened_clay_magenta"},
-	{ "hardenedclay:hardened_clay_orange",		"hardened_clay_orange"},
-	{ "hardenedclay:hardened_clay_brown",		"hardened_clay_brown"},
-	{ "hardenedclay:hardened_clay_blue",		"hardened_clay_blue"},
-	{ "hardenedclay:hardened_clay_yellow",		"hardened_clay_yellow"},
-	{ "hardenedclay:hardened_clay_pink",		"hardened_clay_pink"},
-	{ "hardenedclay:hardened_clay_cyan",		"hardened_clay_cyan"},
-	{ "hardenedclay:hardened_clay_grey",		"hardened_clay_grey"},
-
---mymulch
-
-	{"mymulch:mulch_black",			"mulch_black"},
-	{"mymulch:mulch_blue",			"mulch_blue"},
-	{"mymulch:mulch_brown",			"mulch_brown"},
-	{"mymulch:mulch_cyan",			"mulch_cyan"},
-	{"mymulch:mulch_dark_green",	"mulch_dark_green"},
-	{"mymulch:mulch_dark_grey",		"mulch_dark_grey"},
-	{"mymulch:mulch_green",			"mulch_green"},
-	{"mymulch:mulch_grey",			"mulch_grey"},
-	{"mymulch:mulch_magenta",		"mulch_magenta"},
-	{"mymulch:mulch_orange",		"mulch_orange"},
-	{"mymulch:mulch_pink",			"mulch_pink"},
-	{"mymulch:mulch_red",			"mulch_red"},
-	{"mymulch:mulch_violet",		"mulch_violet"},
-	{"mymulch:mulch_white",			"mulch_white"},
-	{"mymulch:mulch_yellow",		"mulch_yellow"},
-	{"mymulch:mulch_tan",			"mulch_tan"},
-
-			}
+}
 
 	for i in ipairs (nodes_of_slopes) do
 		local nodeitem = nodes_of_slopes[i][1]
