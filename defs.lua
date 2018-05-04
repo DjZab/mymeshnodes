@@ -173,21 +173,27 @@ mymeshnodes.defs = {
 	}
 
   	["circle"] = {
-        	mesh = "mymeshnodes_circle.obj",
-        	collision_box = box_circle,
-        	selection_box = box_circle,
+		[""] = {
+        		mesh = "mymeshnodes_circle.obj",
+        		collision_box = box_circle,
+        		selection_box = box_circle,
+		},
   	}
 
 	["pole"] = {
-		mesh = "mymeshnodes_pole.obj",
-		collision_box = box_pole,
-		selection_box = box_pole,
+		[""] = {
+			mesh = "mymeshnodes_pole.obj",
+			collision_box = box_pole,
+			selection_box = box_pole,
+		},
 	}
 
 	["peek"] = {
-		mesh = "mymeshnodes_peek.obj",
-		collision_box = box_peek,
-		selection_box = box_peek,
+		[""] = {
+			mesh = "mymeshnodes_peek.obj",
+			collision_box = box_peek,
+			selection_box = box_peek,
+		},
 	}
 
 	["curve"] = {
@@ -205,27 +211,39 @@ mymeshnodes.defs = {
 	}
 	
 	["cylinder"] = {
-		mesh = "mymeshnodes_cylinder.obj",	
+		[""] = {
+			mesh = "mymeshnodes_cylinder.obj",
+		},
 	}
 	
 	["sphere"] = {
-		mesh = "mymeshnodes_sphere.obj",	
+		[""] = {
+			mesh = "mymeshnodes_sphere.obj",
+		},
 	}
 	
 	["rounded"] = {
-		mesh = "mymeshnodes_rounded.obj",	
+		[""] = {
+			mesh = "mymeshnodes_rounded.obj",
+		},
 	}
 	
 	["cone"] = {
-		mesh = "mymeshnodes_cone.obj",	
+		[""] = {
+			mesh = "mymeshnodes_cone.obj",
+		},
 	}
 	
 	["blob"] = {
-		mesh = "mymeshnodes_blob.obj",	
+		[""] = {
+			mesh = "mymeshnodes_blob.obj",
+		},
 	}
 	
 	["oct"] = {
-		mesh = "mymeshnodes_oct.obj",	
+		[""] = {
+			mesh = "mymeshnodes_oct.obj",
+		},
 	}	
 }
 
