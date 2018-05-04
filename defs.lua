@@ -1,82 +1,4 @@
 -- Slopes
-local box_slope = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5, 0.4375, 0.5, 0.4375, 0.5},
-		{-0.5, -0.5, 0.375, 0.5, 0.375, 0.5},
-		{-0.5, -0.5, 0.3125, 0.5, 0.3125, 0.5},
-		{-0.5, -0.5, 0.25, 0.5, 0.25, 0.5},
-		{-0.5, -0.5, 0.1875, 0.5, 0.1875, 0.5},
-		{-0.5, -0.5, 0.125, 0.5, 0.125, 0.5},
-		{-0.5, -0.5, 0.0625, 0.5, 0.0625, 0.5},
-		{-0.5, -0.5, 0, 0.5, 0, 0.5},
-		{-0.5, -0.5, -0.0625, 0.5, -0.0625, 0.5},
-		{-0.5, -0.5, -0.125, 0.5, -0.125, 0.5},
-		{-0.5, -0.5, -0.1875, 0.5, -0.1875, 0.5},
-		{-0.5, -0.5, -0.25, 0.5, -0.25, 0.5},
-		{-0.5, -0.5, -0.3125, 0.5, -0.3125, 0.5},
-		{-0.5, -0.5, -0.375, 0.5, -0.375, 0.5},
-		{-0.5, -0.5, -0.4375, 0.5, -0.4375, 0.5},
-	}
-}
-
-local box_slope_inside_corner = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5, 0.4375, 0.5, 0.4375, 0.5},
-		{-0.5, -0.5, 0.375, 0.5, 0.375, 0.5}, 
-		{-0.5, -0.5, 0.3125, 0.5, 0.3125, 0.5},  
-		{-0.5, -0.5, 0.25, 0.5, 0.25, 0.5},
-		{-0.5, -0.5, 0.1875, 0.5, 0.1875, 0.5},
-		{-0.5, -0.5, 0.125, 0.5, 0.125, 0.5}, 
-		{-0.5, -0.5, 0.0625, 0.5, 0.0625, 0.5}, 
-		{-0.5, -0.5, 0, 0.5, 0, 0.5},
-		{-0.5, -0.5, -0.0625, 0.5, -0.0625, 0.5},
-		{-0.5, -0.5, -0.125, 0.5, -0.125, 0.5}, 
-		{-0.5, -0.5, -0.1875, 0.5, -0.1875, 0.5},
-		{-0.5, -0.5, -0.25, 0.5, -0.25, 0.5}, 
-		{-0.5, -0.5, -0.3125, 0.5, -0.3125, 0.5},
-		{-0.5, -0.5, -0.375, 0.5, -0.375, 0.5},
-		{-0.5, -0.5, -0.4375, 0.5, -0.4375, 0.5},
-		{-0.5, -0.5, -0.5, -0.4375, 0.4375, 0.5},
-		{-0.5, -0.5, -0.5, -0.375, 0.375, 0.5}, 
-		{-0.5, -0.5, -0.5, -0.3125, 0.3125, 0.5},
-		{-0.5, -0.5, -0.5, -0.25, 0.25, 0.5}, 
-		{-0.5, -0.5, -0.5, -0.1875, 0.1875, 0.5},
-		{-0.5, -0.5, -0.5, -0.125, 0.125, 0.5},
-		{-0.5, -0.5, -0.5, -0.0625, 0.0625, 0.5}, 
-		{-0.5, -0.5, -0.5, 0, 0, 0.5},
-		{-0.5, -0.5, -0.5, 0.0625, -0.0625, 0.5}, 
-		{-0.5, -0.5, -0.5, 0.125, -0.125, 0.5}, 
-		{-0.5, -0.5, -0.5, 0.1875, -0.1875, 0.5}, 
-		{-0.5, -0.5, -0.5, 0.25, -0.25, 0.5}, 
-		{-0.5, -0.5, -0.5, 0.3125, -0.3125, 0.5},
-		{-0.5, -0.5, -0.5, 0.375, -0.375, 0.5}, 
-		{-0.5, -0.5, -0.5, 0.4375, -0.4375, 0.5},
-	}
-}
-
-local box_slope_outside_corner = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5, 0.4375, -0.4375, 0.4375, 0.5},
-		{-0.5, -0.5, 0.375, -0.375, 0.375, 0.5},
-		{-0.5, -0.5, 0.3125, -0.3125, 0.3125, 0.5},
-		{-0.5, -0.5, 0.25, -0.25, 0.25, 0.5},
-		{-0.5, -0.5, 0.1875, -0.1875, 0.1875, 0.5},
-		{-0.5, -0.5, 0.125, -0.125, 0.125, 0.5},
-		{-0.5, -0.5, 0.0625, -0.0625, 0.0625, 0.5},
-		{-0.5, -0.5, 0, 0, 0, 0.5},
-		{-0.5, -0.5, -0.0625, 0.0625, -0.0625, 0.5},
-		{-0.5, -0.5, -0.125, 0.125, -0.125, 0.5},
-		{-0.5, -0.5, -0.1875, 0.1875, -0.1875, 0.5},
-		{-0.5, -0.5, -0.25, 0.25, -0.25, 0.5},
-		{-0.5, -0.5, -0.3125, 0.3125, -0.3125, 0.5},
-		{-0.5, -0.5, -0.375, 0.375, -0.375, 0.5},
-		{-0.5, -0.5, -0.4375, 0.4375, -0.4375, 0.5},
-	}
-}
-
 local box_slope_inside_45 = {
 	type = "fixed",
 	fixed = {
@@ -138,76 +60,6 @@ local box_slope_outside_45 = {
 	}
 }
 
--- Longslopes
-local box_slope_long = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5,   -1.5,  0.5, -0.375, 0.5},
-		{-0.5, -0.375, -1.25, 0.5, -0.25,  0.5},
-		{-0.5, -0.25,  -1,    0.5, -0.125, 0.5},
-		{-0.5, -0.125, -0.75, 0.5,  0,     0.5},
-		{-0.5,  0,     -0.5,  0.5,  0.125, 0.5},
-		{-0.5,  0.125, -0.25, 0.5,  0.25,  0.5},
-		{-0.5,  0.25,   0,    0.5,  0.375, 0.5},
-		{-0.5,  0.375,  0.25, 0.5,  0.5,   0.5},
-	}
-}
-
-local box_slope_long_inside_corner = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5, -1.5, -0.25, 0.5, 0.5},
-		{-0.5, -0.5, 0.25, 1.5, 0.5, 0.5},
-		{-0.5, -0.5, 0, 1.5, 0.375, 0.5},
-		{-0.5, -0.5, -1.5, 0, 0.375, 0.5},
-		{-0.5, -0.5, -1.5, 0.25, 0.25, 0.5},
-		{-0.5, -0.5, -1.5, 0.5, 0.125, 0.5},
-		{-0.5, -0.5, -1.5, 0.75, 0, 0.5},
-		{-0.5, -0.5, -1.5, 1, -0.125, 0.5},
-		{-0.5, -0.5, -1.5, 1.25, -0.25, 0.5},
-		{-0.5, -0.5, -1.5, 1.5, -0.375, 0.5},
-		{-0.5, -0.5, -0.25, 1.5, 0.25, 0.5},
-		{-0.5, -0.5, -0.5, 1.5, 0.125, 0.5}, 
-		{-0.5, -0.5, -0.75, 1.5, 0, 0.5},
-		{-0.5, -0.5, -1, 1.5, -0.125, 0.5},
-		{-0.5, -0.5, -1.25, 1.5, -0.25, 0.5},
-	}
-}
-
-local box_slope_long_outside_corner = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5, 0.25, -0.25, 0.5, 0.5},
-		{-0.5, -0.5, 0, 0, 0.375, 0.5},
-		{-0.5, -0.5, -0.25, 0.25, 0.25, 0.5},
-		{-0.5, -0.5, -0.5, 0.5, 0.125, 0.5}, 
-		{-0.5, -0.5, -0.75, 0.75, 0, 0.5}, 
-		{-0.5, -0.5, -1, 1, -0.125, 0.5}, 
-		{-0.5, -0.5, -1.25, 1.25, -0.25, 0.5}, 
-		{-0.5, -0.5, -1.5, 1.5, -0.375, 0.5},
-	}
-}
-
-local box_slope_long_top = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5, 0.25, 0.5, 0.5, 0.5}, 
-		{-0.5, -0.5, 0, 0.5, 0.375, 0.25}, 
-		{-0.5, -0.5, -0.25, 0.5, 0.25, 0}, 
-		{-0.5, -0.5, -0.5, 0.5, 0.125, -0.25},  
-	}
-}
-
-local box_slope_long_bottom = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5, 0.25, 0.5, 0, 0.5},
-		{-0.5, -0.5, 0, 0.5, -0.125, 0.25},
-		{-0.5, -0.5, -0.25, 0.5, -0.25, 0}, 
-		{-0.5, -0.5, -0.5, 0.5, -0.375, -0.25}, 
-	}
-}
-
 -- Pyramids
 local box_pyramid = {
 	type = "fixed",
@@ -226,39 +78,6 @@ local box_pyramid_small = {
 		{ -0.375, -0.375, -0.375, 0.375, -0.25,  0.375},
 		{ -0.25,  -0.25,  -0.25,  0.25,  -0.125, 0.25},
 		{ -0.125, -0.125, -0.125, 0.125,  0,     0.125}
-	}
-}
-
-local box_pyramid_quarter = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5, 0.25, -0.25, 0.5, 0.5}, 
-		{-0.5, -0.5, 0, -0.25, 0.375, 0.25}, 
-		{-0.5, -0.5, -0.25, -0.25, 0.25, 0}, 
-		{-0.5, -0.5, -0.5, -0.25, 0.125, -0.25}, 
-		{-0.25, -0.5, 0.25, 0, 0.375, 0.5}, 
-		{0, -0.5, 0.25, 0.25, 0.25, 0.5}, 
-		{0.25, -0.5, 0.25, 0.5, 0.125, 0.5}, 
-		{-0.25, -0.5, 0, 0, 0.25, 0.25}, 
-		{-0.25, -0.5, -0.25, 0, 0.125, 0}, 
-		{0, -0.5, 0, 0.25, 0.125, 0.25}, 
-		{-0.25, -0.5, -0.5, 0.5, 0, 0.25}, 
-	}
-}
-
-local box_pyramid_small_quarter= {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5, 0.25, -0.25, 0, 0.5}, 
-		{-0.5, -0.5, 0, -0.25, -0.125, 0.25},
-		{-0.5, -0.5, -0.25, -0.25, -0.25, 0}, 
-		{-0.5, -0.5, -0.5, -0.25, -0.375, -0.25},
-		{-0.25, -0.5, 0.25, 0, -0.125, 0.5}, 
-		{0, -0.5, 0.25, 0.25, -0.25, 0.5}, 
-		{0.25, -0.5, 0.25, 0.5, -0.375, 0.5}, 
-		{-0.25, -0.5, 0, 0, -0.25, 0.25}, 
-		{-0.25, -0.5, -0.25, 0, -0.375, 0}, 
-		{0, -0.5, 0, 0.25, -0.375, 0.25}, 
 	}
 }
 
@@ -326,42 +145,8 @@ local box_curve = {
 		}
 }
 
---[[local slope_fronthalf_cbox = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5,   -0.5,  0.5, -0.375, 0.5},
-		{-0.5, -0.375, -0.25, 0.5, -0.25,  0.5},
-		{-0.5, -0.25,  0,    0.5, -0.125, 0.5},
-		{-0.5, -0.125, 0.25, 0.5,  0,     0.5},
-	}
-}
-local slope_backhalf_cbox = {
-	type = "fixed",
-	fixed = {
-		{-0.5, -0.5,   -0.5,  0.5, 0.125, 0.5},
-		{-0.5, 0.125, -0.25, 0.5, 0.25,  0.5},
-		{-0.5, 0.25,  0,    0.5, 0.375, 0.5},
-		{-0.5, 0.375, 0.25, 0.5,  0.5,     0.5},
-	}
-}]]
-
 mymeshnodes.defs = {
  	["slope"] = {
-		[""] = {
-			mesh = "mymeshnodes_twelve-twelve.obj",
-			collision_box = box_slope,
-			selection_box = box_slope,		
-		},
-		["_inside_corner"] = {
-			mesh = "mymeshnodes_twelve-twelve-ic.obj",
-			collision_box = box_slope_inside_corner,
-			selection_box = box_slope_inside_corner,
-		},
-		["_outside_corner"] = {
-			mesh = "mymeshnodes_twelve-twelve-oc.obj",
-			collision_box = box_slope_outside_corner,
-			selection_box = box_slope_outside_corner,
-		},
 		["_inside_45"] = {
 			mesh = "mymeshnodes_diag1.obj",
 			collision_box = box_slope_inside_45,
@@ -371,31 +156,6 @@ mymeshnodes.defs = {
 			mesh = "mymeshnodes_diag2.obj",
 			collision_box = box_slope_outside_45,
 			selection_box = box_slope_outside_45,
-		},
-		["_long"] = {
-			mesh = "mymeshnodes_six-twelve.obj",
-			collision_box = box_slope_long,
-			selection_box = box_slope_long,
-		},
-		["_long_inside_corner"] = {
-			mesh = "mymeshnodes_six-twelve-ic.obj",
-			collision_box = box_slope_long_inside_corner,
-			selection_box = box_slope_long_inside_corner,
-		},
-		["_long_outside_corner"] = {
-			mesh = "mymeshnodes_six-twelve-oc.obj",
-			collision_box = box_slope_long_outside_corner,
-			selection_box = box_slope_long_outside_corner,
-		},
-		["_long_top"] = {
-			mesh = "mymeshnodes_lslope_top.obj",
-			collision_box = box_slope_long_top,
-			selection_box = box_slope_long_top,
-		},
-		["_long_bottom"] = {
-			mesh = "mymeshnodes_lslope_bot.obj",
-			collision_box = box_slope_long_bottom,
-			selection_box = box_slope_long_bottom,
 		},
 	}
 
@@ -409,16 +169,6 @@ mymeshnodes.defs = {
 			mesh = "mymeshnodes_smpyramid.obj",
 			collision_box = box_pyramid_small,
 			selection_box = box_pyramid_small,
-		},
-		["_quarter"] = {
-			mesh = "mymeshnodes_quapyramid.obj",
-			collision_box = box_pyramid_quarter,
-			selection_box = box_pyramid_quarter,
-		},
-		["_small_quarter"] = {
-			mesh = "mymeshnodes_smquapyramid.obj",
-			collision_box = box_pyramid_small_quarter,
-			selection_box = box_pyramid_small_quarter,
 		},
 	}
 
@@ -440,17 +190,43 @@ mymeshnodes.defs = {
 		selection_box = box_peek,
 	}
 
-	["valley"] = {
-		mesh = "mymeshnodes_valley.obj",
-		collision_box = box_valley,
-		selection_box = box_valley,
-	}
-
 	["curve"] = {
-		mesh = "mymeshnodes_curve.obj",
-		collision_box = box_curve,
-		selection_box = box_curve,
+		[""] = {
+			mesh = "mymeshnodes_curve.obj",
+			collision_box = box_curve,
+			selection_box = box_curve,
+		},
+		["_corner"] = {
+			mesh = "mymeshnodes_rounded_corner.obj",
+		},
+		["_inside_half"] = {
+			mesh = "mymeshnodes_ichalf.obj",
+		},		
 	}
+	
+	["cylinder"] = {
+		mesh = "mymeshnodes_cylinder.obj",	
+	}
+	
+	["sphere"] = {
+		mesh = "mymeshnodes_sphere.obj",	
+	}
+	
+	["rounded"] = {
+		mesh = "mymeshnodes_rounded.obj",	
+	}
+	
+	["cone"] = {
+		mesh = "mymeshnodes_cone.obj",	
+	}
+	
+	["blob"] = {
+		mesh = "mymeshnodes_blob.obj",	
+	}
+	
+	["oct"] = {
+		mesh = "mymeshnodes_oct.obj",	
+	}	
 }
 
 for type,a in pairs(mymeshnodes.defs) do
