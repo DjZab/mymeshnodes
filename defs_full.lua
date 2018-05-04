@@ -448,9 +448,41 @@ mymeshnodes.defs = {
 	}
 
 	["curve"] = {
-		mesh = "mymeshnodes_curve.obj",
-		collision_box = box_curve,
-		selection_box = box_curve,
+		[""] = {
+			mesh = "mymeshnodes_curve.obj",
+			collision_box = box_curve,
+			selection_box = box_curve,
+		},
+		["_corner"] = {
+			mesh = "mymeshnodes_rounded_corner.obj",
+		},
+		["_inside_half"] = {
+			mesh = "mymeshnodes_ichalf.obj",
+		},		
+	}
+	
+	["cylinder"] = {
+		mesh = "mymeshnodes_cylinder.obj",	
+	}
+	
+	["sphere"] = {
+		mesh = "mymeshnodes_sphere.obj",	
+	}
+	
+	["rounded"] = {
+		mesh = "mymeshnodes_rounded.obj",	
+	}
+	
+	["cone"] = {
+		mesh = "mymeshnodes_cone.obj",	
+	}
+	
+	["blob"] = {
+		mesh = "mymeshnodes_blob.obj",	
+	}
+	
+	["oct"] = {
+		mesh = "mymeshnodes_oct.obj",	
 	}
 }
 
