@@ -1,5 +1,3 @@
-local S = moreblocks.intllib
-
 -- Node will be called <modname>:slope_<subname>
 
 function register_slope(modname, subname, recipeitem, groups, images, description, drop, light)
@@ -32,6 +30,4 @@ function mymeshnodes:register_slope(modname, subname, recipeitem, fields)
 	for alternate, def in pairs(defs) do
 		mymeshnodes.register_single("slope", alternate, def, modname, subname, recipeitem, fields)
 	end
-
-	--circular_saw.known_nodes[recipeitem] = {modname, subname}
 end
