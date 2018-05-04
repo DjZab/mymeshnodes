@@ -63,9 +63,11 @@ end
 if not minetest.get_modpath("moreblocks") or minetest.get_modpath("stairsplus") then
 	dofile(modpath .."/defs_full.lua")
 	dofile(modpath .."/machine_full.lua")
+	dofile(modpath .. "/custom_full.lua")
 else
 	dofile(modpath .."/defs.lua")
 	dofile(modpath .."/machine.lua")
+	dofile(modpath .. "/custom.lua")
 end
 
 -- dofile(modpath.. "/aliases.lua") -- Not needed as of Q2 2013, uncomment to fix old maps.
@@ -73,8 +75,7 @@ end
 dofile(modpath .."/registrations.lua")
 dofile(modpath .. "/slopes.lua")
 dofile(modpath .. "/pyramids.lua")
+dofile(modpath .. "/common.lua")
 
 ToDo:
 -- dofile(modpath .. "/recipes.lua")
--- dofile(modpath .. "/common.lua")
--- dofile(modpath .. "/custom.lua")
