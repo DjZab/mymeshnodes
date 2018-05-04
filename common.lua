@@ -1,19 +1,29 @@
-stairsplus.register_single = function(category, alternate, info, modname, subname, recipeitem, fields)
+mymeshnodes.register_single = function(category, alternate, info, modname, subname, recipeitem, fields)
 	local descriptions = {
-		["micro"] = "Microblock",
-		["slab"] = "Slab",
 		["slope"] = "Slope",
-		["panel"] = "Panel",
-		["stair"] = "Stairs",
+		["pyramid"] = "Pyramid",
+		["circle"] = "Circle",
+		["pole"] = "Pole",
+		["peek"] = "Peek",
+		["curve"] = "Curve"
+		["cylinder"] = "Cylinder",
+		["sphere"] = "Sphere",
+		["rounded"] = "Rounded",
+		["cone"] = "Cone",
+		["blob"] = "Blob",
+		["oct"] = "Octagon",
 	}
 	local def = {}
-	if category ~= "slab" then
+	
+	-- Ist aktuell immer erfüllt
+	if category ~= "slab" then -- Weder Nodebox noch Mesh
 		def = table.copy(info)
 	end
 
 	for k, v in pairs(fields) do
 		def[k] = v
 	end
+	-- Aktuell ist drawtype immer "mesh" 
 	def.drawtype = "nodebox"
 	if category == "slope" then
 		def.drawtype = "mesh"
@@ -21,8 +31,12 @@ stairsplus.register_single = function(category, alternate, info, modname, subnam
 	def.paramtype = "light"
 	def.paramtype2 = def.paramtype2 or "facedir"
 	def.on_place = minetest.rotate_node
+	
+	-- Ist aktuell immer erfüllt
 	if category ~= "slab" then
+		-- Wenn Probleme, dann wegen intllib
 		def.description = S("%s " .. descriptions[category]):format(fields.description)
+	-- Wird aktuell nie erreicht
 	else
 		local desc_base = S("%s " .. descriptions[category]):format(fields.description)
 		if type(info) ~= "table" then
@@ -39,7 +53,9 @@ stairsplus.register_single = function(category, alternate, info, modname, subnam
 			def.description = desc_base .. alternate:gsub("_", " "):gsub("(%a)(%S*)", function(a, b) return a:upper() .. b end)
 		end
 	end
-	def.groups = stairsplus:prepare_groups(fields.groups)
+	
+	-- Verstehe ich noch nicht
+	def.groups = mymeshnodes:prepare_groups(fields.groups)
 	if category == "stair" and alternate == "" then
 		def.groups.stair = 1
 	end
@@ -47,5 +63,5 @@ stairsplus.register_single = function(category, alternate, info, modname, subnam
 		def.drop = modname.. ":" .. category .. "_" .. fields.drop .. alternate
 	end
 	minetest.register_node(":" ..modname.. ":" .. category .. "_" .. subname .. alternate, def)
-	stairsplus.register_recipes(category, alternate, modname, subname, recipeitem)
+	mymeshnodes.register_recipes(category, alternate, modname, subname, recipeitem)
 end
