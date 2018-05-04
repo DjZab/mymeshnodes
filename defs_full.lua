@@ -447,6 +447,14 @@ mymeshnodes.defs = {
 		},
 	}
 
+	["valley"] = {
+		[""] = {
+			mesh = "mymeshnodes_valley.obj",
+			collision_box = box_valley,
+			selection_box = box_valley,
+		},
+	}
+		
 	["curve"] = {
 		[""] = {
 			mesh = "mymeshnodes_curve.obj",
