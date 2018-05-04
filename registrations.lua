@@ -60,6 +60,6 @@ for _, name in pairs(default_nodes) do
 		ndef.paramtype2 = nil
 	end
 
-	-- mod = "moreblocks"
-	mymeshnodes:register_all(mod, name, nodename, ndef) --Modname testen
+	mod = "mymeshnodes"
+	mymeshnodes:register_all(mod, name, nodename, ndef)
 end
