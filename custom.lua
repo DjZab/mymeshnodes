@@ -1,4 +1,10 @@
 --[[
+ToDo:
+- Testen
+- Nach der Finalisierung das Array anpassen
+]]
+
+--[[
 Subset table should have the following format: (You can remove entries as needed.)
 local subset = {
 	{ "slope", "" },
