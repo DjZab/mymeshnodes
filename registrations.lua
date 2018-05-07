@@ -1,3 +1,9 @@
+--[[
+ToDo:
+- Testen
+- Gegebenfalls erweitern
+]]
+
 local default_nodes = {
 	"stone",
 	"stone_block",
