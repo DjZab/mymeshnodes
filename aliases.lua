@@ -1,3 +1,8 @@
+--[[
+ToDo:
+- Sicherstellen, dass die alten Nodes portiert werden.
+- Prüfen, wie die Namen aufgebaut sind und gegebenfalls hier anpassen
+]]
 local function register_mymeshnodes_alias(modname, origname, newname)
 	minetest.register_alias(modname.. ":slope_" ..origname, "mymeshnodes:slope_" ..newname)
 	minetest.register_alias(modname.. ":slope_ic_" ..origname, "mymeshnodes:slope_" ..newname.. "_inside_corner")
