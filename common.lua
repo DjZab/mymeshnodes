@@ -1,3 +1,10 @@
+--[[
+ToDo:
+-Testen
+- Gegebenfalls descriptions erweitern
+- Überlegen, ob es Sinn macht, dass alle nodes vom drawtype mesh sind
+]]
+
 mymeshnodes.register_single = function(category, alternate, info, modname, subname, recipeitem, fields)
 	local descriptions = {
 		["slope"] = "Slope",
@@ -54,7 +61,6 @@ mymeshnodes.register_single = function(category, alternate, info, modname, subna
 		end
 	end
 	
-	-- Verstehe ich noch nicht
 	def.groups = mymeshnodes:prepare_groups(fields.groups)
 	if category == "stair" and alternate == "" then
 		def.groups.stair = 1
