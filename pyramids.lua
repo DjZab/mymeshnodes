@@ -1,5 +1,9 @@
--- Node will be called <modname>:pyramid_<subname>
+--[[
+ToDo:
+- Testen
+]]
 
+-- Node will be called <modname>:pyramid_<subname>
 function register_pyramid(modname, subname, recipeitem, groups, images, description, drop, light)
 	mymeshnodes:register_pyramid(modname, subname, recipeitem, {
 		groups = groups,
