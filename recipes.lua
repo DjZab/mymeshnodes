@@ -1,4 +1,10 @@
--- Prüfen, ob Microblocks überhaupt vorhanden
+--[[
+ToDo:
+- Testen
+- Prüfen, ob Microblocks überhaupt vorhanden
+- Weitere Rezepte ergänzen, sobald nötig
+]]
+
 mymeshnodes.register_recipes = function(category, alternate, modname, subname, recipeitem)
 		
 -- slope
