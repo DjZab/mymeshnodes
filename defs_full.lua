@@ -1,3 +1,9 @@
+--[[
+ToDo:
+- Testen
+- Weitere Cuts ergänzen
+]]
+
 -- Slopes
 local box_slope = {
 	type = "fixed",
