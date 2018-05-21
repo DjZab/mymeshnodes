@@ -34,4 +34,6 @@ function mymeshnodes:register_slope(modname, subname, recipeitem, fields)
 	for alternate, def in pairs(defs) do
 		mymeshnodes.register_single("slope", alternate, def, modname, subname, recipeitem, fields)
 	end
+	
+	mesh_machine.known_nodes[recipeitem] = {modname, subname}
 end
