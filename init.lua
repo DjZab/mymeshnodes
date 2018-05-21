@@ -7,9 +7,6 @@ ToDo:
 - function register_stair_slab_panel_micro
 ]]
 
--- Show stairs/slabs/panels/microblocks in creative inventory (true or false):
-setting("bool", "mymeshnodes_in_creative_inventory", false)
-
 local modpath = minetest.get_modpath("mymeshnodes")
 
 mymeshnodes = {}
@@ -40,18 +37,18 @@ end
 
 function mymeshnodes:register_all(modname, subname, recipeitem, fields)
 	self:register_slope(modname, subname, recipeitem, fields)
-	self:register_pyramid(modname, subname, recipeitem, fields)
+--	self:register_pyramid(modname, subname, recipeitem, fields)
 	-- self:register_6dfacedir_conversion(modname, subname) -- Not needed as of Q3 2013, uncomment to fix old maps.
 end
 
 function mymeshnodes:register_alias_all(modname_old, subname_old, modname_new, subname_new)
 	self:register_slope_alias(modname_old, subname_old, modname_new, subname_new)
-	self:register_pyramid_alias(modname_old, subname_old, modname_new, subname_new)
+--	self:register_pyramid_alias(modname_old, subname_old, modname_new, subname_new)
 end
 
 function mymeshnodes:register_alias_force_all(modname_old, subname_old, modname_new, subname_new)
 	self:register_slope_alias_force(modname_old, subname_old, modname_new, subname_new)
-	self:register_pyramid_alias_force(modname_old, subname_old, modname_new, subname_new)
+--	self:register_pyramid_alias_force(modname_old, subname_old, modname_new, subname_new)
 end
  
 function register_stair_slab_panel_micro(modname, subname, recipeitem, groups, images, description, drop, light)
@@ -70,7 +67,7 @@ if not minetest.get_modpath("moreblocks") or minetest.get_modpath("stairsplus") 
 	dofile(modpath .. "/custom_full.lua")
 else
 	dofile(modpath .."/defs.lua")
-	dofile(modpath .."/machine.lua")
+	dofile(modpath .."/mesh_machine.lua")
 	dofile(modpath .. "/custom.lua")
 end
 
@@ -79,5 +76,5 @@ end
 dofile(modpath .. "/recipes.lua")
 dofile(modpath .. "/common.lua")
 dofile(modpath .. "/slopes.lua")
-dofile(modpath .. "/pyramids.lua")
+--dofile(modpath .. "/pyramids.lua")
 dofile(modpath .."/registrations.lua")
