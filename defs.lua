@@ -165,7 +165,7 @@ mymeshnodes.defs = {
 		},
 	}
 
-	["pyramid"] = {
+--[[	["pyramid"] = {
 		[""] = {
 			mesh = "mymeshnodes_pyramid.obj",
 			collision_box = box_pyramid,
@@ -250,7 +250,7 @@ mymeshnodes.defs = {
 		[""] = {
 			mesh = "mymeshnodes_oct.obj",
 		},
-	}	
+	}	]]
 }
 
 for type,a in pairs(mymeshnodes.defs) do
