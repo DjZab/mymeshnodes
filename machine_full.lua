@@ -44,7 +44,7 @@ on_construct = function(pos)
 		"label[11.5,6.5;Input:]"..
 		"label[11.5,8;Output:]"..
 		"label[1,0.5;Slopes]"..
-		"item_image_button[1,1;1,1;mymeshnodes:slope_mi;slope; ]"..
+		"item_image_button[1,1;1,1;mymeshnodes_mach1.png;slope; ]"..
 		"item_image_button[2,1;1,1;mymeshnodes:slope_ic_mi;slopeic; ]"..
 		"item_image_button[3,1;1,1;mymeshnodes:slope_oc_mi;slopeoc; ]"..
 		"item_image_button[4,1;1,1;mymeshnodes:slope_i45_mi;slopei45; ]"..
@@ -519,16 +519,3 @@ minetest.register_craft({
 			{'default:steel_ingot', "default:copper_ingot", 'default:steel_ingot'},		
 		},
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
