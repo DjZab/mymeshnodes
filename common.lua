@@ -8,7 +8,7 @@ ToDo:
 mymeshnodes.register_single = function(category, alternate, info, modname, subname, recipeitem, fields)
 	local descriptions = {
 		["slope"] = "Slope",
-		["pyramid"] = "Pyramid",
+--[[		["pyramid"] = "Pyramid",
 		["circle"] = "Circle",
 		["pole"] = "Pole",
 		["peek"] = "Peek",
@@ -18,7 +18,7 @@ mymeshnodes.register_single = function(category, alternate, info, modname, subna
 		["rounded"] = "Rounded",
 		["cone"] = "Cone",
 		["blob"] = "Blob",
-		["oct"] = "Octagon",
+		["oct"] = "Octagon",]]
 	}
 	local def = {}
 	
@@ -38,28 +38,6 @@ mymeshnodes.register_single = function(category, alternate, info, modname, subna
 	def.paramtype = "light"
 	def.paramtype2 = def.paramtype2 or "facedir"
 	def.on_place = minetest.rotate_node
-	
-	-- Ist aktuell immer erfüllt
-	if category ~= "slab" then
-		-- Wenn Probleme, dann wegen intllib
-		def.description = S("%s " .. descriptions[category]):format(fields.description)
-	-- Wird aktuell nie erreicht
-	else
-		local desc_base = S("%s " .. descriptions[category]):format(fields.description)
-		if type(info) ~= "table" then
-			def.node_box = {
-				type = "fixed",
-				fixed = {-0.5, -0.5, -0.5, 0.5, (info/16)-0.5, 0.5},
-			}
-			def.description = ("%s (%d/16)"):format(desc_base, info)
-		else
-			def.node_box = {
-				type = "fixed",
-				fixed = info,
-			}
-			def.description = desc_base .. alternate:gsub("_", " "):gsub("(%a)(%S*)", function(a, b) return a:upper() .. b end)
-		end
-	end
 	
 	def.groups = mymeshnodes:prepare_groups(fields.groups)
 	if category == "stair" and alternate == "" then
